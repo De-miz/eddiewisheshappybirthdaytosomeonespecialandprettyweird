@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
+	<title>Happy Birthday</title>
+</head>
+<body>
+	<main>
+		<audio controls loop src="1.mp3" id="audio"></audio>
+		<div class="present" id="hidden">
+			<button onclick="charliaClick()">Charlia's Present</button>
+			<script>
+				function charliaClick() {
+					let element = document.getElementById("hidden");
+					let play = document.getElementById("audio");
+					element.setAttribute("style", "height: fit-content");
+					play.play();
+				}
+			</script>
+			<div class="message">
+				<span id="green">H</span>
+				<span id="yellow">A</span>
+				<span id="red">P</span>
+				<span id="blue">P</span>
+				<span id="green">Y</span>
+				<br>
+				<span id="yellow">B</span>
+				<span id="purple">I</span>
+				<span id="green">R</span>
+				<span id="red">T</span>
+				<span id="blue">H</span>
+				<span id="cyan">D</span>
+				<span id="purple">A</span>
+				<span id="yellow">Y</span>
+				<br>
+				<span id="cyan">M</span><span id="pink">y </span>
+				<span id="purple">p</span><span id="yellow">r</span><span id="green">e</span><span id="pink">t</span><span id="cyan">t</span><span id="red">y </span>
+				<span id="blue">l</span><span id="purple">i</span><span id="yellow">t</span><span id="cyan">t</span><span id="green">l</span><span id="yellow">e </span>
+				<span id="red">w</span><span id="blue">e</span><span id="purple">i</span><span id="green">r</span><span id="yellow">d</span><span id="red">o</span>
+			</div>
+		</div>
+	</main>
+</body>
+</html>
