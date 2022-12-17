@@ -24,31 +24,29 @@ audio {
 .present {
     margin: 0 auto;
     width: 80%;
-    height: 70px;
+    height: 30px;
     padding-bottom: 20px;
-    border-radius: 50px;
+    border-radius: 10px;
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(20px);
     margin-top: 320px;
     transition: 0.5s all linear;
     overflow: hidden;
 }
-/*.present:focus, 
-.present:active, 
-.present:hover {
-    height: 330px;
-}*/
 button {
     width: 100%;
-    height: 100px;
+    height: 50px;
     border: none;
-    border-radius: 50px;
+    border-radius: 10px;
     font-family: 'Satisfy', cursive;
-    font-size: 2em;
+    font-size: 1.5em;
     color: black;
     background-color: rgb(82, 0, 114);
     color: white;
     transition: 0.1s all linear;
+}
+#stop {
+    margin-top: 2px;
 }
 button:hover {
     color: rgb(82, 0, 114);
