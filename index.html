@@ -4,7 +4,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" type="text/css" href="Event.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
@@ -12,15 +12,23 @@
 </head>
 <body>
 	<main>
-		<audio controls src="1.mp3" id="audio"></audio>
+		<audio controls loop src="1.mp3" id="audio"></audio>
 		<div class="present" id="hidden">
-			<button onclick="charliaClick()">Charlia's Present</button>
+			<button id="play" onclick="charliaClick()">Charlia's Present</button>
+			<button id="stop" onclick="stopSong()">stop music & hide</button>
 			<script>
 				function charliaClick() {
 					let element = document.getElementById("hidden");
 					let play = document.getElementById("audio");
 					element.setAttribute("style", "height: fit-content");
 					play.play();
+				}
+				function stopSong() {
+					let player = document.getElementById("audio");
+					let hide = document.getElementById("hidden");
+					hide.setAttribute("style", "height: 30px");
+					player.pause();
+					player.currentTime = 0;
 				}
 			</script>
 			<div class="message">
