@@ -10,49 +10,44 @@
 	<link href="https://fonts.googleapis.com/css2?family=Rubik+Gemstones&display=swap" rel="stylesheet">
 	<title>Happy Birthday</title>
 </head>
-<body>
-	<main>
-		<audio controls loop src="1.mp3" id="audio"></audio>
-		<div class="present" id="hidden">
-			<button id="play" onclick="charliaClick()">Charlia's Present</button>
-			<button id="stop" onclick="stopSong()">stop music & hide</button>
-			<script>
-				function charliaClick() {
-					let element = document.getElementById("hidden");
-					let play = document.getElementById("audio");
-					element.setAttribute("style", "height: fit-content");
-					play.play();
-				}
-				function stopSong() {
-					let player = document.getElementById("audio");
-					let hide = document.getElementById("hidden");
-					hide.setAttribute("style", "height: 30px");
-					player.pause();
-					player.currentTime = 0;
-				}
-			</script>
-			<div class="message">
-				<span id="green">H</span>
-				<span id="yellow">A</span>
-				<span id="red">P</span>
-				<span id="blue">P</span>
-				<span id="green">Y</span>
-				<br>
-				<span id="yellow">B</span>
-				<span id="purple">I</span>
-				<span id="green">R</span>
-				<span id="red">T</span>
-				<span id="blue">H</span>
-				<span id="cyan">D</span>
-				<span id="purple">A</span>
-				<span id="yellow">Y</span>
-				<br>
-				<span id="cyan">M</span><span id="pink">y </span>
-				<span id="purple">p</span><span id="yellow">r</span><span id="green">e</span><span id="pink">t</span><span id="cyan">t</span><span id="red">y </span>
-				<span id="blue">l</span><span id="purple">i</span><span id="yellow">t</span><span id="cyan">t</span><span id="green">l</span><span id="yellow">e </span>
-				<span id="red">w</span><span id="blue">e</span><span id="purple">i</span><span id="green">r</span><span id="yellow">d</span><span id="red">o</span>
+<body onload="typer()">
+	<div class="welcome-wish" onclick="hide()">
+		<p id="msg"></p>
+	</div>
+	<div class="background-blur" style="z-index: 2;">
+		<div class="main">
+			<audio controls loop src="1.mp3" id="audio"></audio>
+			<div class="present" id="hidden">
+				<button id="play" onclick="btnClick()">Maffa's Present</button>
+				<button id="stop" onclick="stopSong()">stop music & hide</button>
+				<script src="script.js">
+
+
+				</script>
+				<div class="message">
+					<span id="green">H</span>
+					<span id="yellow">A</span>
+					<span id="red">P</span>
+					<span id="blue">P</span>
+					<span id="green">Y</span>
+					<br>
+					<span id="yellow">B</span>
+					<span id="purple">I</span>
+					<span id="green">R</span>
+					<span id="red">T</span>
+					<span id="blue">H</span>
+					<span id="cyan">D</span>
+					<span id="purple">A</span>
+					<span id="yellow">Y</span>
+					<br>
+					<span id="cyan">M</span><span id="pink">y </span>
+					<span id="purple">p</span><span id="yellow">r</span><span id="green">e</span><span id="pink">t</span><span id="cyan">t</span><span id="red">y </span>
+					<span id="blue">l</span><span id="purple">i</span><span id="yellow">t</span><span id="cyan">t</span><span id="green">l</span><span id="yellow">e </span>
+					<span id="red">M</span><span id="blue">a</span><span id="purple">f</span><span id="green">f</span><span id="yellow">a</span>
+				</div>
 			</div>
 		</div>
-	</main>
+	</div>
+	
 </body>
 </html>
