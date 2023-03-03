@@ -4,7 +4,7 @@ body {
     margin: 0;
     background-color: rgba(89, 0, 255, 0.363);
     font-family: 'Rubik Gemstones', cursive;
-    background: url('M2.jpg') center;
+    background: url('m2.jpg') center;
     background-size: cover;
 }
 .welcome-wish {
@@ -31,7 +31,7 @@ body {
     border-top: 1px solid transparent;
 }
 .main {
-    background: url('M2.jpg') center;
+    background: url('m2.jpg') center;
     background-size: cover;
     margin: 0 auto;
     text-align: center;
@@ -42,6 +42,7 @@ body {
     max-width: 400px;
     border-radius: 10px;
     box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.315);
+    scale: 0.85;
 }
 audio {
     width: 100%;
