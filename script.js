@@ -13,7 +13,7 @@ msg_box = [
     Happy birthday, to my favorite girl.', 
 
     'Mom: I hope your special day is as special as you! Nothing \
-    lights up my world more than you! Love you my much baby.', 
+    lights up my world more than you! Love you so much baby.', 
 
     'Dad: Happy birthday dear! I wish you all the very best on \
     this special day. May you be blessed today, tomorrow, and in \
